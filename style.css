@@ -1,0 +1,143 @@
+/* Fonts ( to be replaced with local ) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@300;400;500;600;700;900&display=swap');
+
+/* Variables */
+:root {
+    --zenboard-bg: #1d1d1d;
+    --zenboard-fg: #f1faee;
+    /* --zenboard-fg: #fefae0; */
+    --zenboard-accent: #2E2E2E;
+    --zenboard-grey: #818380;
+}
+
+
+body {
+    font-family: "Inter", "Poppins" sans-serif;
+    color: var(--zenboard-fg);
+    background: var(--zenboard-bg);
+    background: linear-gradient(145deg, rgba(23, 17, 17, 1) 0%, rgba(14, 17, 17, 1) 100%);
+    margin: 1rem;
+}
+
+/* 
+html {
+    scroll-behavior: smooth;
+} */
+
+svg {
+    color: var(--zenboard-grey);
+    align-self: center;
+}
+
+button {
+    background-color: var(--zenboard-accent);
+    border: none;
+    color: var(--zenboard-fg);
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    border-radius: 16px;
+    padding: 0.5rem;
+    margin: auto 0;
+}
+
+div.top {
+    padding: 1rem;
+}
+
+div.stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    color: var(--zenboard-grey);
+}
+
+div.stat{
+    margin:1rem;
+}
+
+div.stat > h3{
+    margin: 0.1rem;
+}
+
+div.stat > h4 {
+    margin: 0;
+}
+
+span.stat-number {
+    font-size: 2.75rem;
+    color: var(--zenboard-fg);
+}
+
+div.container {
+    border: 1px solid #686967;
+    border-radius: 16px;
+    width: fit-content;
+    padding: 1.25rem;
+    margin: 1rem;
+    padding-top: 0;
+}
+
+div.container-title {
+    display: flex;
+    justify-content: left;
+    gap: 0.5rem;
+}
+
+h1.title {
+    margin: 0;
+}
+
+/* Fonts */
+
+/* .inter-<uniquifier> {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  } */
+
+
+.inter-regular {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-light {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.poppins-black {
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: normal;
+}
