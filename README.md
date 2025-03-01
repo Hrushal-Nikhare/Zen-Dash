@@ -1,5 +1,6 @@
 # ZenDash
 
+## https://github.com/Hrushal-Nikhare/Zen-Dash/releases/tag/alpha
 ### v0.1
 
 To build the extension, run the following command in the terminal:
