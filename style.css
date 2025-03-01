@@ -73,7 +73,8 @@ span.stat-number {
 div.container {
     border: 1px solid #686967;
     border-radius: 16px;
-    width: fit-content;
+    /* width: fit-content; */
+    width: max-content;
     padding: 1.25rem;
     margin: 1rem;
     padding-top: 0;
@@ -87,6 +88,36 @@ div.container-title {
 
 h1.title {
     margin: 0;
+}
+
+img.tab-favicon{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+.tab-item{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border-bottom: 1px dashed var(--zenboard-accent);
+}
+
+.tab-item:hover{
+    background-color: var(--zenboard-accent);
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+div.tab-favicon-placeholder{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 25%;
+    background-color: var(--zenboard-accent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Fonts */

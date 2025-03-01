@@ -17,15 +17,11 @@
     "scripts": [
       "bg-script.js"
     ],
-    "persistent": true,
     "type": "module"
   },
   "icons": {
-    "16": "ico/16.png",
-    "32": "ico/32.png",
-    "48": "ico/48.png",
-    "64": "ico/64.png",
-    "128": "ico/128.png"
+    "64": "assets/favion-64.png",
+    "128": "assets/favion-128.png"
   },
   "content_security_policy": {
     "extension_pages": "script-src 'self'; object-src 'self';"
