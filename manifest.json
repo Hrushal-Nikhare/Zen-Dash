@@ -20,10 +20,15 @@
     "type": "module"
   },
   "icons": {
-    "64": "assets/favion-64.png",
-    "128": "assets/favion-128.png"
+    "64": "assets\\Favicon-64.png",
+    "128": "assets\\Favicon-128.png"
   },
   "content_security_policy": {
     "extension_pages": "script-src 'self'; object-src 'self';"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "addon@example.com"
+    }
   }
 }

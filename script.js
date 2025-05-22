@@ -4,14 +4,14 @@
 
 let now = new Date();
 let currentTime = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
-console.log(currentTime);
+// console.log(currentTime);
 
 document.getElementById('time').innerHTML = currentTime;
 // console.log(browser.tabs.getAllInWindow())
 function getTabs() {
     // console.log("getTabs");
     browser.runtime.sendMessage({ data: "tabs" }).then((response) => {
-        console.log(response);
+        // console.log(response);
         // Create a neat representation of tabs
         const escapeHTML = (str) => {
             if (!str) return '';
@@ -22,7 +22,9 @@ function getTabs() {
                 .replace(/"/g, '&quot;')
                 .replace(/'/g, '&#039;');
         };
-
+        // console.log(response.tabs.length);
+        document.getElementById('tabs-open').innerHTML = response.tabs.length;
+        console.log(response.tabs);
         const createTabsHTML = (tabs) => {
             if (!tabs || tabs.length === 0) {
                 return '<p>No tabs found</p>';
@@ -41,7 +43,7 @@ function getTabs() {
                     <div class="tab-item" title="${title}" data-tab-id="${tab.id}">
                         ${favicon}
                         <span class="tab-title">${truncatedTitle}</span>
-                    </div>
+                    </div>           
                 `;
             }).join('');
         };
@@ -63,5 +65,6 @@ function getTabs() {
         });
     });
 }
-window.onload = getTabs;
-window.addEventListener("focus", getTabs);
+window.addEventListener('load', getTabs);
+window.addEventListener('focus', getTabs);
+window.addEventListener('pageshow', getTabs);
